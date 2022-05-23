@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="charAt + NullPointerException">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/AssertTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="마무리" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653285490682</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="마무리">
+      <created>1653288662411</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653288662411</updated>
+    </task>
+    <task id="LOCAL-00009" summary="마무리">
+      <created>1653293729313</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653293729313</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +223,7 @@
     <MESSAGE value="초기화" />
     <MESSAGE value="Lambda + extractProperty" />
     <MESSAGE value="charAt + NullPointerException" />
-    <option name="LAST_COMMIT_MESSAGE" value="charAt + NullPointerException" />
+    <MESSAGE value="마무리" />
+    <option name="LAST_COMMIT_MESSAGE" value="마무리" />
   </component>
 </project>
