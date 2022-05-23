@@ -1,5 +1,6 @@
 package org.example.test;
 
+import org.assertj.core.api.SoftAssertions;
 import org.example.AssertJ.domain.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -86,6 +87,62 @@ public class AssertTest {
                           tuple("user1", 20));
     }
 
+    @Test
+    @DisplayName("SoftAssertion Test")
+    void softAssertion() {
+        int number1 = 10;
+        int number2 = 20;
+        String string1 = "abc";
 
+        SoftAssertions softAssertions = new SoftAssertions();
+        softAssertions.assertThat(number1).as("Test1").isLessThan(15);
+        softAssertions.assertThat(number2).as("Test2").isGreaterThan(15);
+        softAssertions.assertThat(string1).as("Test3").contains("b");
 
+        // 이 코드로 위에 적힌 모든 softAssetions 실행.
+        softAssertions.assertAll();
+    }
+
+    @Test
+    @DisplayName("Exception Test")
+    // 오류가 날 내용을 정확하게 검증하는 것.
+    void exceptionTest() {
+        Throwable throwable1 = catchThrowable(() -> {
+            // 오류가 날 것을 적음.
+            throw new IllegalAccessError("Exception1");
+        });
+        assertThat(throwable1).isInstanceOf(IllegalAccessError.class);
+        assertThat(throwable1).hasMessage("Exception1");
+
+        Throwable throwable2 = new ArithmeticException("0으로 나눌 수 없음");
+        assertThat(throwable2).isInstanceOf(ArithmeticException.class);
+        assertThat(throwable2).hasMessage("0으로 나눌 수 없음");
+    }
+
+    @Test
+    @DisplayName("StringIndexOutOfBoundsException 확인")
+    // default 값이 protected. protected, public, default 가능
+    void charAt_범위밖() throws Exception {
+        // given
+        String input = "abc";
+
+        System.out.println(input.charAt(input.length()));
+
+        // when, then
+        assertThatThrownBy(() -> input.charAt(input.length()))
+                .isInstanceOf(StringIndexOutOfBoundsException.class)
+                .hasMessageContaining("String index out of range")
+                .hasMessageContaining(String.valueOf(input.length()));
+    }
+
+    @Test
+    @DisplayName("NullPointerException 처리")
+    void nullPointerException() {
+        assertThatNullPointerException().isThrownBy(() -> {
+            throw new NullPointerException("Null!");
+        })
+                .withMessage("%s!", "Null")
+                .withMessageContaining("null")
+                .withNoCause();
+    }
 }

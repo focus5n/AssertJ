@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="초기화">
+    <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="Lambda + extractProperty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/AssertTest.java" afterDir="false" />
     </list>
@@ -43,7 +43,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AssertTest.extractPropertyTest">
+  <component name="RunManager" selected="JUnit.AssertTest">
     <configuration name="AssertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AssertJ" />
       <extension name="coverage">
@@ -59,7 +59,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.chainingTestUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssertTest.charAt_범위밖" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AssertJ" />
       <extension name="coverage">
         <pattern>
@@ -69,13 +69,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.AssertTest" />
-      <option name="METHOD_NAME" value="chainingTestUser" />
+      <option name="METHOD_NAME" value="charAt_범위밖" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.extractPropertyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssertTest.exceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AssertJ" />
       <extension name="coverage">
         <pattern>
@@ -85,13 +85,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.AssertTest" />
-      <option name="METHOD_NAME" value="extractPropertyTest" />
+      <option name="METHOD_NAME" value="exceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.lambdaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssertTest.nullPointerException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AssertJ" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +101,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.AssertTest" />
-      <option name="METHOD_NAME" value="lambdaTest" />
+      <option name="METHOD_NAME" value="nullPointerException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssertTest.lambda_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssertTest.softAssertion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AssertJ" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.AssertTest" />
-      <option name="METHOD_NAME" value="lambda_test" />
+      <option name="METHOD_NAME" value="softAssertion" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AssertTest.extractPropertyTest" />
-        <item itemvalue="JUnit.AssertTest.lambdaTest" />
         <item itemvalue="JUnit.AssertTest" />
-        <item itemvalue="JUnit.AssertTest.lambda_test" />
-        <item itemvalue="JUnit.AssertTest.chainingTestUser" />
+        <item itemvalue="JUnit.AssertTest.charAt_범위밖" />
+        <item itemvalue="JUnit.AssertTest.nullPointerException" />
+        <item itemvalue="JUnit.AssertTest.exceptionTest" />
+        <item itemvalue="JUnit.AssertTest.softAssertion" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653277044899</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lambda + extractProperty">
+      <created>1653278454984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653278454984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +203,7 @@
     <MESSAGE value="User 작성" />
     <MESSAGE value="체이닝 테스트 - 스트링, 넘버" />
     <MESSAGE value="초기화" />
-    <option name="LAST_COMMIT_MESSAGE" value="초기화" />
+    <MESSAGE value="Lambda + extractProperty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lambda + extractProperty" />
   </component>
 </project>
