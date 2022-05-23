@@ -5,6 +5,7 @@ import org.example.AssertJ.domain.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -142,7 +143,50 @@ public class AssertTest {
             throw new NullPointerException("Null!");
         })
                 .withMessage("%s!", "Null")
-                .withMessageContaining("null")
+                .withMessageContaining("Null")
+                // exception 에러의 원인은 제공하지 않음.
                 .withNoCause();
+
+        Throwable throwable1 = new ArithmeticException("abcd");
+        Throwable throwable2 = throwable1.getCause();
+        throwable2.getMessage();
+    }
+
+    @Test
+    @DisplayName("IllegalException 처리")
+    void illegalArgs() {
+        assertThatIllegalArgumentException().isThrownBy(() -> {
+            throw new IllegalArgumentException("Illegal Args!");
+        })
+                .withMessage("%s!", "legal")
+                .withMessageContaining("Illegal")
+                .withNoCause();
+    }
+
+    @Test
+    @DisplayName("IOException 처리")
+    void ioException() {
+        assertThatIOException().isThrownBy(() -> {
+            throw new IOException("IO!");
+        })
+                .withMessage("%s!", "IO")
+                .withMessageContaining("!!")
+                .withNoCause();
+    }
+
+    @Test
+    // 준비(Given) - 실행(When) - 검증(Then) : BDD 스타일
+    @DisplayName("BDD Style - Exception")
+    void exceptionAssertionExample() {
+        // given some preconditions
+
+        // when
+        Throwable throwable1 = catchThrowable(() -> {
+            throw new Exception("BOOM!");
+        });
+
+        // then
+        assertThat(throwable1).isInstanceOf(Exception.class)
+                .hasMessageContaining("doom!");
     }
 }
