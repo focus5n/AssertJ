@@ -89,6 +89,22 @@ public class AssertTest {
     }
 
     @Test
+    @DisplayName("Property 추출 테스트 - 여러 Property 중 하나 뽑기")
+    void extractOnePropertyTest() {
+        List<User> userList = new ArrayList<>();
+        User admin = new User("admin", 30);
+        User user0 = new User("user0", 10);
+        User user1 = new User("user1", 20);
+        userList.add(admin);
+        userList.add(user0);
+        userList.add(user1);
+
+        assertThat(userList)
+                .extracting("name")
+                .containsOnly("admin", "user0", "user1");
+    }
+
+    @Test
     @DisplayName("SoftAssertion Test")
     void softAssertion() {
         int number1 = 10;
@@ -100,7 +116,7 @@ public class AssertTest {
         softAssertions.assertThat(number2).as("Test2").isGreaterThan(15);
         softAssertions.assertThat(string1).as("Test3").contains("b");
 
-        // 이 코드로 위에 적힌 모든 softAssetions 실행.
+        // 이 코드로 위에 적힌 모든 softAssertions 실행.
         softAssertions.assertAll();
     }
 
