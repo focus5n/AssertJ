@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="마무리">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="롬복 적용">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssertJ/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssertJ/domain/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653375349258</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="롬복 적용">
+      <created>1656594799833</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656594799833</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +251,7 @@
     <MESSAGE value="Lambda + extractProperty" />
     <MESSAGE value="charAt + NullPointerException" />
     <MESSAGE value="마무리" />
-    <option name="LAST_COMMIT_MESSAGE" value="마무리" />
+    <MESSAGE value="롬복 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="롬복 적용" />
   </component>
 </project>
