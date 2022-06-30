@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aefda83f-a151-41cc-a435-1cbcce66b023" name="변경" comment="마무리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/AssertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssertJ/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssertJ/domain/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +120,17 @@
       <option name="MAIN_CLASS_NAME" value="org.example.test.AssertTest" />
       <option name="METHOD_NAME" value="illegalArgs" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
